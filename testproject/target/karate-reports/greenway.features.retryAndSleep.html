@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("7f90b13c-d1cc-4518-9a3a-278fdc79d1cc",{name:"prakashmanoharan"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>greenway.features.retryAndSleep</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">3</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-09-10 03:30:45 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:7]"><span>[1:7]</span> <span>Retry scenario (Retries 5 times in interval of 5 seconds)</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:16]"><span>[2:16]</span> <span>Sleep scenario (waits for 5 seconds before validating response code)</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:25]"><span>[3:25]</span> <span>Converting the number to string</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[4:30]"><span>[4:30]</span> <span>Converting the string to number</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">greenway/features/retryAndSleep.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Retry and Sleep</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:7]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">retryandsleep</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:7]</span>
+                <span class="scenario-name">Retry scenario (Retries 5 times in interval of 5 seconds)</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1055</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:7]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://reqres.in/api/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">15:30:38.065 karate.env system property was: null 
+15:30:38.071 &gt;&gt; lock acquired, begin callSingle: classpath:helpers/basicAuth.js
+15:30:38.122 &lt;&lt; lock released, cached callSingle: classpath:helpers/basicAuth.js
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure retry = { count: 5, interval:5000 }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">34</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>params {page:2,delay:false}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>retry until  response.per_page == 6</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1018</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">15:30:38.446 request:
+1 &gt; GET https://reqres.in/api/users?delay=false&amp;page=2
+1 &gt; x-mac-address: cf:32:d4:43:b5,ae:43:ad:12:f4
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_231)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:30:39.189 response time in milliseconds: 741
+1 &lt; 200
+1 &lt; Date: Sat, 10 Sep 2022 10:00:39 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;406-ut0vzoCuidvyMf8arZpMpJ6ZRDw&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=3CoO28H0V2zWmEBn6ZExZLLi7IfesJnvjjqHqV2FzWLhC4hRMYpEFOX4IdMAvd2pc0khGZ1B5CuhggtxHO9tXBOzZ0Xki3veegleXBThaN2PQb3vcN36NF9RAA%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 74875159fade2e1d-BOM
+{&quot;page&quot;:2,&quot;per_page&quot;:6,&quot;total&quot;:12,&quot;total_pages&quot;:2,&quot;data&quot;:[{&quot;id&quot;:7,&quot;email&quot;:&quot;michael.lawson@reqres.in&quot;,&quot;first_name&quot;:&quot;Michael&quot;,&quot;last_name&quot;:&quot;Lawson&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/7-image.jpg&quot;},{&quot;id&quot;:8,&quot;email&quot;:&quot;lindsay.ferguson@reqres.in&quot;,&quot;first_name&quot;:&quot;Lindsay&quot;,&quot;last_name&quot;:&quot;Ferguson&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/8-image.jpg&quot;},{&quot;id&quot;:9,&quot;email&quot;:&quot;tobias.funke@reqres.in&quot;,&quot;first_name&quot;:&quot;Tobias&quot;,&quot;last_name&quot;:&quot;Funke&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/9-image.jpg&quot;},{&quot;id&quot;:10,&quot;email&quot;:&quot;byron.fields@reqres.in&quot;,&quot;first_name&quot;:&quot;Byron&quot;,&quot;last_name&quot;:&quot;Fields&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/10-image.jpg&quot;},{&quot;id&quot;:11,&quot;email&quot;:&quot;george.edwards@reqres.in&quot;,&quot;first_name&quot;:&quot;George&quot;,&quot;last_name&quot;:&quot;Edwards&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/11-image.jpg&quot;},{&quot;id&quot;:12,&quot;email&quot;:&quot;rachel.howell@reqres.in&quot;,&quot;first_name&quot;:&quot;Rachel&quot;,&quot;last_name&quot;:&quot;Howell&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/12-image.jpg&quot;}],&quot;support&quot;:{&quot;url&quot;:&quot;https://reqres.in/#support-heading&quot;,&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:16]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">retryandsleep</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:16]</span>
+                <span class="scenario-name">Sleep scenario (waits for 5 seconds before validating response code)</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>5840</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:16]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://reqres.in/api/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">15:30:39.215 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def sleep = function(pause){ java.lang.Thread.sleep(pause) }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>params {page:2,delay:false}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">826</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.21">15:30:39.222 request:
+1 &gt; GET https://reqres.in/api/users?delay=false&amp;page=2
+1 &gt; x-mac-address: cf:32:d4:43:b5,ae:43:ad:12:f4
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_231)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:30:40.046 response time in milliseconds: 824
+1 &lt; 200
+1 &lt; Date: Sat, 10 Sep 2022 10:00:40 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;406-ut0vzoCuidvyMf8arZpMpJ6ZRDw&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=aDtNYX3DAi4dd%2BQrthmFQMGQ4LCfI9%2B9n%2FmwmKvtWAREjV0pEyvU9BRlsrh775jzoydRKLgfQ0xuJfDYZ39iPsCHksmdLzJGUa7qDpibHQM0P5%2Fkh%2Bl3jhiMnQ%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 7487515e0fac85cb-BOM
+{&quot;page&quot;:2,&quot;per_page&quot;:6,&quot;total&quot;:12,&quot;total_pages&quot;:2,&quot;data&quot;:[{&quot;id&quot;:7,&quot;email&quot;:&quot;michael.lawson@reqres.in&quot;,&quot;first_name&quot;:&quot;Michael&quot;,&quot;last_name&quot;:&quot;Lawson&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/7-image.jpg&quot;},{&quot;id&quot;:8,&quot;email&quot;:&quot;lindsay.ferguson@reqres.in&quot;,&quot;first_name&quot;:&quot;Lindsay&quot;,&quot;last_name&quot;:&quot;Ferguson&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/8-image.jpg&quot;},{&quot;id&quot;:9,&quot;email&quot;:&quot;tobias.funke@reqres.in&quot;,&quot;first_name&quot;:&quot;Tobias&quot;,&quot;last_name&quot;:&quot;Funke&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/9-image.jpg&quot;},{&quot;id&quot;:10,&quot;email&quot;:&quot;byron.fields@reqres.in&quot;,&quot;first_name&quot;:&quot;Byron&quot;,&quot;last_name&quot;:&quot;Fields&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/10-image.jpg&quot;},{&quot;id&quot;:11,&quot;email&quot;:&quot;george.edwards@reqres.in&quot;,&quot;first_name&quot;:&quot;George&quot;,&quot;last_name&quot;:&quot;Edwards&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/11-image.jpg&quot;},{&quot;id&quot;:12,&quot;email&quot;:&quot;rachel.howell@reqres.in&quot;,&quot;first_name&quot;:&quot;Rachel&quot;,&quot;last_name&quot;:&quot;Howell&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/12-image.jpg&quot;}],&quot;support&quot;:{&quot;url&quot;:&quot;https://reqres.in/#support-heading&quot;,&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>eval sleep(5000)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5012</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:25]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">retryandsleep</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:25]</span>
+                <span class="scenario-name">Converting the number to string</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>11</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:25]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://reqres.in/api/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">15:30:45.065 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def foo = 10                      //define integer</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def json = {&quot;bar&quot;: #(foo+&#39;&#39;) }    //convert the interert to string and save in json</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match json == {&#39;bar&#39;: &#39;10&#39;}     //compare json with sample string</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:30]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">retryandsleep</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:30]</span>
+                <span class="scenario-name">Converting the string to number</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>24</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:30]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:30]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://reqres.in/api/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">15:30:45.086 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def foo = &#39;10&#39;                      //define integer</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def json = {&quot;bar&quot;: #(foo*1) }    //convert the interert to string and save in json</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match json == {&#39;bar&#39;: 10}     //compare json with sample string</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def json2 = {&quot;bar&quot;: #(parseInt(foo*1)) } //using java script</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match json2 == {&#39;bar&#39;: 10} //using java script</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def json3 = {&quot;bar&quot;: #(parseInt(foo)) } //using java script not equals function</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref failed">37</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match json3 == {&#39;bar&#39;: &#39;10&#39;} //using java script</span>
+      </div>
+    </div>
+    <div class="time-cell failed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.37">15:30:45.112 classpath:greenway/features/retryAndSleep.feature:37
+And match json3 == {&#39;bar&#39;: &#39;10&#39;} //using java script
+match failed: EQUALS
+  $ | not equal | match failed for name: &#39;bar&#39; (MAP:MAP)
+  {&quot;bar&quot;:10}
+  {&quot;bar&quot;:&quot;10&quot;}
+
+    $.bar | data types don&#39;t match (NUMBER:STRING)
+    10
+    &#39;10&#39;
+
+classpath:greenway/features/retryAndSleep.feature:37
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

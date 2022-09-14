@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: greenway.runnerTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 9.566 s <<< FAILURE! - in greenway.runnerTest
+testTags[1][4]  Time elapsed: 0.696 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+match failed: EQUALS
+  $ | not equal | match failed for name: 'bar' (MAP:MAP)
+  {"bar":10}
+  {"bar":"10"}
+
+    $.bar | data types don't match (NUMBER:STRING)
+    10
+    '10'
+
+classpath:greenway/features/retryAndSleep.feature:37
+

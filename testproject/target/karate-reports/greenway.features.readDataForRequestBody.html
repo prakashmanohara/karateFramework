@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("7f90b13c-d1cc-4518-9a3a-278fdc79d1cc",{name:"prakashmanoharan"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>greenway.features.readDataForRequestBody</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-09-10 12:41:05 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:19]"><span>[1:19]</span> <span>Read data from testdata folder json file and send it in body without any changes.</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">greenway/features/readDataForRequestBody.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Read and send data</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:19]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">testfileReader</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:19]</span>
+                <span class="scenario-name">Read data from testdata folder json file and send it in body without any changes.</span>
+                <span>Find the newly appended values in print statement</span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>5126</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:19]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenResponse = callonce read(&#39;classpath:helpers/createToken.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1711</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">12:41:02.297 &lt;&lt; lock released, cached callonce: read(&#39;classpath:helpers/createToken.feature&#39;)
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">helpers.createToken</div>
+      </div>
+      <div class="time-cell passed">1691</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://auth-api.gisqa.aws.greenwayhealth.com/oauth2/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.0.17">12:41:00.515 karate.env system property was: null 
+12:41:00.521 &gt;&gt; lock acquired, begin callSingle: classpath:helpers/basicAuth.js
+12:41:00.572 &lt;&lt; lock released, cached callSingle: classpath:helpers/basicAuth.js
+12:41:00.592 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:helpers/createToken.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment">#username and password in bellow lines are paratmeters</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.19">
+      <div class="step-ref bg-step">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = call read(&#39;classpath:helpers/basicAuth.js&#39;) {username:&quot;#(userName)&quot;,password:&quot;#(userPassword)&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">25</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.20">
+      <div class="step-ref bg-step">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;as/token.oauth2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.21">
+      <div class="step-ref bg-step">21</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;grant_type&quot;:&quot;client_credentials&quot;,&quot;scope&quot;:&quot;test-scope gcs-scope cdc-scope&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.22">
+      <div class="step-ref bg-step">22</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1663</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.0.22">12:41:00.935 request:
+1 &gt; POST https://auth-api.gisqa.aws.greenwayhealth.com/oauth2/as/token.oauth2
+1 &gt; Authorization: Basic Mi4xNi44NDAuMS4xMTM4ODMuMy40NDEuNzMwMjU6UHNzNzQwMDA3NDAwMDc0MDAwNzQwMDA3NDAwMDc0MDAwNzQ=
+1 &gt; x-mac-address: cf:32:d4:43:b5,ae:43:ad:12:f4
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 76
+1 &gt; Host: auth-api.gisqa.aws.greenwayhealth.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_231)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;grant_type&quot;:&quot;client_credentials&quot;,&quot;scope&quot;:&quot;test-scope gcs-scope cdc-scope&quot;}
+
+12:41:02.291 response time in milliseconds: 1354
+1 &lt; 200
+1 &lt; Date: Sat, 10 Sep 2022 07:11:02 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 913
+1 &lt; Connection: keep-alive
+1 &lt; x-amzn-RequestId: cc868fe7-febe-4848-b4ad-5a4c0af3f4ac
+1 &lt; access-control-allow-origin: *
+1 &lt; x-amzn-Remapped-content-length: 913
+1 &lt; x-amzn-Remapped-connection: close
+1 &lt; x-amz-apigw-id: YO3E-H8MiYcFyOg=
+1 &lt; cache-control: no-cache, no-store
+1 &lt; etag: W/&quot;391-mTvyDJoOI2fcwPcTG0WBfJtkbZc&quot;
+1 &lt; x-powered-by: Express
+1 &lt; X-Amzn-Trace-Id: Root=1-631c3886-516498692770cf1e3500bbc0
+1 &lt; pragma: no-cache
+1 &lt; x-amzn-Remapped-date: Sat, 10 Sep 2022 07:11:02 GMT
+{&quot;status&quot;:&quot;OK&quot;,&quot;access_token&quot;:&quot;eyJhbGciOiJSUzI1NiIsImtpZCI6IlZVWEJaUHJSMkVFVl8yYWJHMUxhYWpEVkxGcyIsInBpLmF0bSI6ImhzYTIifQ.eyJzY29wZSI6InRlc3Qtc2NvcGUgZ2NzLXNjb3BlIGNkYy1zY29wZSIsImNsaWVudF9pZCI6IjIuMTYuODQwLjEuMTEzODgzLjMuNDQxLjczMDI1IiwiaXNzIjoiaHR0cHM6Ly9hdXRoLWFwaS5naXNxYS5hd3MuZ3JlZW53YXloZWFsdGguY29tL29hdXRoMiIsIm9pZCI6IjIuMTYuODQwLjEuMTEzODgzLjMuNDQxLjczMDI1IiwidGVuYW50IjoiMi4xNi44NDAuMS4xMTM4ODMuMy40NDEuNzMwMjUiLCJleHAiOjE2NjI4MDEwNjJ9.fxLbPaRB2KqxsR70DOzrCDpJuZPXiws5BYa5rvUasaKcinf1vWSLtlGvNnAwEHvdg2KU5diRh5MClZUqrDSVNCUCVcMQKB7hQX1Ctv6ZC3vgR7QTDvvAWIwE0pAsAb3c5f7LJMvEm0zcSdIQ_hlBjJK8kDqDObAc_OKs4Ade-KV8PxoAfLGGvTXcxW7dTJ97BcWpE4ehv0Ew-QRjtYowBc07EiKl6hplYj8mLDT3s1FwLuy4eVkJvOsQVYDpIAJ1iadi2PABHgLVcGwtM0wRD2ad0ljIsuqL_b7FzmL3uBEQwPeK755MbQLPHK2r-aYSENS_qBkE5O9jgcGp7gehqQ&quot;,&quot;scope&quot;:&quot;test-scope gcs-scope cdc-scope&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;expires_in&quot;:7199,&quot;message&quot;:&quot;Token generated Successfully&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.23">
+      <div class="step-ref bg-step">23</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.24">
+      <div class="step-ref bg-step">24</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.0.24">12:41:02.294 [print] eyJhbGciOiJSUzI1NiIsImtpZCI6IlZVWEJaUHJSMkVFVl8yYWJHMUxhYWpEVkxGcyIsInBpLmF0bSI6ImhzYTIifQ.eyJzY29wZSI6InRlc3Qtc2NvcGUgZ2NzLXNjb3BlIGNkYy1zY29wZSIsImNsaWVudF9pZCI6IjIuMTYuODQwLjEuMTEzODgzLjMuNDQxLjczMDI1IiwiaXNzIjoiaHR0cHM6Ly9hdXRoLWFwaS5naXNxYS5hd3MuZ3JlZW53YXloZWFsdGguY29tL29hdXRoMiIsIm9pZCI6IjIuMTYuODQwLjEuMTEzODgzLjMuNDQxLjczMDI1IiwidGVuYW50IjoiMi4xNi44NDAuMS4xMTM4ODMuMy40NDEuNzMwMjUiLCJleHAiOjE2NjI4MDEwNjJ9.fxLbPaRB2KqxsR70DOzrCDpJuZPXiws5BYa5rvUasaKcinf1vWSLtlGvNnAwEHvdg2KU5diRh5MClZUqrDSVNCUCVcMQKB7hQX1Ctv6ZC3vgR7QTDvvAWIwE0pAsAb3c5f7LJMvEm0zcSdIQ_hlBjJK8kDqDObAc_OKs4Ade-KV8PxoAfLGGvTXcxW7dTJ97BcWpE4ehv0Ew-QRjtYowBc07EiKl6hplYj8mLDT3s1FwLuy4eVkJvOsQVYDpIAJ1iadi2PABHgLVcGwtM0wRD2ad0ljIsuqL_b7FzmL3uBEQwPeK755MbQLPHK2r-aYSENS_qBkE5O9jgcGp7gehqQ 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.25">
+      <div class="step-ref bg-step">25</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def accessToken = response.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = tokenResponse.accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">12:41:02.300 [print] eyJhbGciOiJSUzI1NiIsImtpZCI6IlZVWEJaUHJSMkVFVl8yYWJHMUxhYWpEVkxGcyIsInBpLmF0bSI6ImhzYTIifQ.eyJzY29wZSI6InRlc3Qtc2NvcGUgZ2NzLXNjb3BlIGNkYy1zY29wZSIsImNsaWVudF9pZCI6IjIuMTYuODQwLjEuMTEzODgzLjMuNDQxLjczMDI1IiwiaXNzIjoiaHR0cHM6Ly9hdXRoLWFwaS5naXNxYS5hd3MuZ3JlZW53YXloZWFsdGguY29tL29hdXRoMiIsIm9pZCI6IjIuMTYuODQwLjEuMTEzODgzLjMuNDQxLjczMDI1IiwidGVuYW50IjoiMi4xNi44NDAuMS4xMTM4ODMuMy40NDEuNzMwMjUiLCJleHAiOjE2NjI4MDEwNjJ9.fxLbPaRB2KqxsR70DOzrCDpJuZPXiws5BYa5rvUasaKcinf1vWSLtlGvNnAwEHvdg2KU5diRh5MClZUqrDSVNCUCVcMQKB7hQX1Ctv6ZC3vgR7QTDvvAWIwE0pAsAb3c5f7LJMvEm0zcSdIQ_hlBjJK8kDqDObAc_OKs4Ade-KV8PxoAfLGGvTXcxW7dTJ97BcWpE4ehv0Ew-QRjtYowBc07EiKl6hplYj8mLDT3s1FwLuy4eVkJvOsQVYDpIAJ1iadi2PABHgLVcGwtM0wRD2ad0ljIsuqL_b7FzmL3uBEQwPeK755MbQLPHK2r-aYSENS_qBkE5O9jgcGp7gehqQ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url testDataUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#read the testdata from sampledata json file</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody = read(&#39;classpath:greenway/testdata/sampleData.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#set the variable with all the functions in dataGenrator java file</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def dataGenerator = Java.type(&#39;helpers.dataGenerator&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#below command appends the data into existing request body and send it as new request</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set requestBody.environment = dataGenerator.getRandomAttributesValue().environment</span>
+      </div>
+    </div>
+    <div class="time-cell passed">107</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref bg-step">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set requestBody.cdcOutboundEnvelope.cdcOutboundRows[0].tableName = dataGenerator.getRandomAttributesValue().environment</span>
+      </div>
+    </div>
+    <div class="time-cell passed">16</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set requestBody.cdcOutboundEnvelope.cdcOutboundRows[0].cdcDataObject[0].value = dataGenerator.getRandomAttributesValue().numberwithMinMax</span>
+      </div>
+    </div>
+    <div class="time-cell passed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>header Authorization = &#39;Bearer &#39;+ authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;cdcenvelope&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request requestBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3259</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.24">12:41:02.447 request:
+2 &gt; POST https://ingestion-api.edhqa.aws.greenwayhealth.com/cdcenvelope
+2 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IlZVWEJaUHJSMkVFVl8yYWJHMUxhYWpEVkxGcyIsInBpLmF0bSI6ImhzYTIifQ.eyJzY29wZSI6InRlc3Qtc2NvcGUgZ2NzLXNjb3BlIGNkYy1zY29wZSIsImNsaWVudF9pZCI6IjIuMTYuODQwLjEuMTEzODgzLjMuNDQxLjczMDI1IiwiaXNzIjoiaHR0cHM6Ly9hdXRoLWFwaS5naXNxYS5hd3MuZ3JlZW53YXloZWFsdGguY29tL29hdXRoMiIsIm9pZCI6IjIuMTYuODQwLjEuMTEzODgzLjMuNDQxLjczMDI1IiwidGVuYW50IjoiMi4xNi44NDAuMS4xMTM4ODMuMy40NDEuNzMwMjUiLCJleHAiOjE2NjI4MDEwNjJ9.fxLbPaRB2KqxsR70DOzrCDpJuZPXiws5BYa5rvUasaKcinf1vWSLtlGvNnAwEHvdg2KU5diRh5MClZUqrDSVNCUCVcMQKB7hQX1Ctv6ZC3vgR7QTDvvAWIwE0pAsAb3c5f7LJMvEm0zcSdIQ_hlBjJK8kDqDObAc_OKs4Ade-KV8PxoAfLGGvTXcxW7dTJ97BcWpE4ehv0Ew-QRjtYowBc07EiKl6hplYj8mLDT3s1FwLuy4eVkJvOsQVYDpIAJ1iadi2PABHgLVcGwtM0wRD2ad0ljIsuqL_b7FzmL3uBEQwPeK755MbQLPHK2r-aYSENS_qBkE5O9jgcGp7gehqQ
+2 &gt; x-mac-address: cf:32:d4:43:b5,ae:43:ad:12:f4
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 3066
+2 &gt; Host: ingestion-api.edhqa.aws.greenwayhealth.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_231)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;version&quot;:&quot;1.00.00.01&quot;,&quot;environment&quot;:&quot;Toefinger&quot;,&quot;cdcOutboundEnvelope&quot;:{&quot;envelopeDateTime&quot;:&quot;2021-11-05T08:15:30-05:00&quot;,&quot;envelopeSequenceNumber&quot;:&quot;2.16.840.1.113883.3.441.73025-20201105-000001&quot;,&quot;oid&quot;:&quot;2.16.840.1.113883.3.441&quot;,&quot;siteId&quot;:&quot;73025&quot;,&quot;schemaVersion&quot;:&quot;18.31.00&quot;,&quot;timezone&quot;:&quot;-09:00&quot;,&quot;cdcOutboundRows&quot;:[{&quot;tableName&quot;:&quot;Galbart Glover&quot;,&quot;opCode&quot;:&quot;update&quot;,&quot;transactionDateTime&quot;:&quot;2021-11-11T08:15:33-05:00&quot;,&quot;cdcDataObject&quot;:[{&quot;column&quot;:&quot;obxmanualid&quot;,&quot;value&quot;:19},{&quot;column&quot;:&quot;obxmanualguid&quot;,&quot;value&quot;:&quot;59D6922F-4A6E-41B1-82B8-4B0C211B2257&quot;},{&quot;column&quot;:&quot;obxconceptid&quot;,&quot;value&quot;:&quot;1007&quot;},{&quot;column&quot;:&quot;concepthistoryid&quot;,&quot;value&quot;:null},{&quot;column&quot;:&quot;patientid&quot;,&quot;value&quot;:&quot;1005&quot;},{&quot;column&quot;:&quot;testdescription&quot;,&quot;value&quot;:&quot;Respiratory Rate&quot;},{&quot;column&quot;:&quot;resultvaluetype&quot;,&quot;value&quot;:&quot;0&quot;},{&quot;column&quot;:&quot;resultunits&quot;,&quot;value&quot;:&quot;degree celsius&quot;},{&quot;column&quot;:&quot;resultvalue&quot;,&quot;value&quot;:&quot;98.5&quot;},{&quot;column&quot;:&quot;localresultunits&quot;,&quot;value&quot;:&quot;degree celsius&quot;},{&quot;column&quot;:&quot;localresultvalue&quot;,&quot;value&quot;:&quot;98.5&quot;},{&quot;column&quot;:&quot;localresultflag&quot;,&quot;value&quot;:null},{&quot;column&quot;:&quot;localresultuomconceptid&quot;,&quot;value&quot;:&quot;1005&quot;},{&quot;column&quot;:&quot;referencerange&quot;,&quot;value&quot;:null},{&quot;column&quot;:&quot;resultflag&quot;,&quot;value&quot;:null},{&quot;column&quot;:&quot;resultstatus&quot;,&quot;value&quot;:&quot;1&quot;},{&quot;column&quot;:&quot;collectiondate&quot;,&quot;value&quot;:&quot;2005-08-26 08:46:45.000&quot;},{&quot;column&quot;:&quot;resultdate&quot;,&quot;value&quot;:&quot;2005-08-26 08:46:45.000&quot;},{&quot;column&quot;:&quot;createuser&quot;,&quot;value&quot;:&quot;1039&quot;},{&quot;column&quot;:&quot;createdate&quot;,&quot;value&quot;:&quot;2010-10-21 06:06:17.873&quot;},{&quot;column&quot;:&quot;lastchangedby&quot;,&quot;value&quot;:&quot;1039&quot;},{&quot;column&quot;:&quot;lastchangeddate&quot;,&quot;value&quot;:&quot;2010-10-21 06:06:17.873&quot;},{&quot;column&quot;:&quot;resultdocumentid&quot;,&quot;value&quot;:null},{&quot;column&quot;:&quot;documentid&quot;,&quot;value&quot;:null},{&quot;column&quot;:&quot;enabled&quot;,&quot;value&quot;:&quot;1&quot;}]},{&quot;tableName&quot;:&quot;obxmanualclinicalvital&quot;,&quot;opCode&quot;:&quot;update&quot;,&quot;transactionDateTime&quot;:&quot;2021-11-11T08:15:33-05:00&quot;,&quot;cdcDataObject&quot;:[{&quot;column&quot;:&quot;clinicalvitalid&quot;,&quot;value&quot;:&quot;12121212&quot;},{&quot;column&quot;:&quot;obxmanualid&quot;,&quot;value&quot;:&quot;12121212&quot;}]},{&quot;tableName&quot;:&quot;clinicalvital&quot;,&quot;opCode&quot;:&quot;update&quot;,&quot;transactionDateTime&quot;:&quot;2021-11-11T08:15:33-05:00&quot;,&quot;cdcDataObject&quot;:[{&quot;column&quot;:&quot;clinicalvitalid&quot;,&quot;value&quot;:&quot;12121212&quot;},{&quot;column&quot;:&quot;clinicalvitalgroupid&quot;,&quot;value&quot;:&quot;1019&quot;},{&quot;column&quot;:&quot;userid&quot;,&quot;value&quot;:&quot;1039&quot;},{&quot;column&quot;:&quot;datetimetaken&quot;,&quot;value&quot;:&quot;2003-12-17 16:13:31.000&quot;},{&quot;column&quot;:&quot;temperature&quot;,&quot;value&quot;:&quot;null&quot;},{&quot;column&quot;:&quot;height&quot;,&quot;value&quot;:&quot;null&quot;},{&quot;column&quot;:&quot;weight&quot;,&quot;value&quot;:&quot;null&quot;},{&quot;column&quot;:&quot;bpposition&quot;,&quot;value&quot;:&quot;null&quot;},{&quot;column&quot;:&quot;heartrate&quot;,&quot;value&quot;:&quot;null&quot;},{&quot;column&quot;:&quot;systolicbp&quot;,&quot;value&quot;:&quot;10&quot;},{&quot;column&quot;:&quot;diastolicbp&quot;,&quot;value&quot;:&quot;10&quot;},{&quot;column&quot;:&quot;laterality&quot;,&quot;value&quot;:&quot;null&quot;},{&quot;column&quot;:&quot;cuffsize&quot;,&quot;value&quot;:&quot;50&quot;},{&quot;column&quot;:&quot;vitalsite&quot;,&quot;value&quot;:&quot;null&quot;},{&quot;column&quot;:&quot;resprate&quot;,&quot;value&quot;:&quot;null&quot;},{&quot;column&quot;:&quot;hrregularity&quot;,&quot;value&quot;:&quot;null&quot;},{&quot;column&quot;:&quot;tempmethod&quot;,&quot;value&quot;:&quot;Oral&quot;},{&quot;column&quot;:&quot;headcircumference&quot;,&quot;value&quot;:&quot;null&quot;},{&quot;column&quot;:&quot;spo2percent&quot;,&quot;value&quot;:&quot;null&quot;},{&quot;column&quot;:&quot;o2deliverydevice&quot;,&quot;value&quot;:&quot;null&quot;},{&quot;column&quot;:&quot;fio2&quot;,&quot;value&quot;:&quot;null&quot;},{&quot;column&quot;:&quot;flowrate&quot;,&quot;value&quot;:&quot;null&quot;}]},{&quot;tableName&quot;:&quot;careprovider&quot;,&quot;opCode&quot;:&quot;update&quot;,&quot;transactionDateTime&quot;:&quot;2021-11-11T08:15:33-05:00&quot;,&quot;cdcDataObject&quot;:[{&quot;column&quot;:&quot;personid&quot;,&quot;value&quot;:&quot;1005&quot;},{&quot;column&quot;:&quot;careproviderid&quot;,&quot;value&quot;:&quot;1013&quot;},{&quot;column&quot;:&quot;userid&quot;,&quot;value&quot;:&quot;1039&quot;}]}],&quot;summary&quot;:{&quot;totalCount&quot;:4}}}
+
+12:41:05.702 response time in milliseconds: 3255
+2 &lt; 400
+2 &lt; Date: Sat, 10 Sep 2022 07:11:05 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 39
+2 &lt; Connection: keep-alive
+2 &lt; x-amzn-RequestId: 682f4dd4-9fba-4cbc-bb7c-2696fbae8697
+2 &lt; x-amz-apigw-id: YO3FNFHtiYcFkaQ=
+2 &lt; X-Amzn-Trace-Id: Root=1-631c3887-11d026b3731c74140385d16c
+{&quot;message&quot;:&quot;CDC Envelope is processed&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.26">12:41:05.705 [print] {
+  &quot;message&quot;: &quot;CDC Envelope is processed&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>match response ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.27">{&quot;message&quot;:&quot;CDC Envelope is processed&quot;}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Tag: @testfileReader</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Greenway application</td>
+      <td>10 Sep 2022, 12:41</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@testfileReader</td>
+          <td      class="passed"    >7</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">7</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="3270669498">3.270</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1899391966.html">greenway/features/readDataForRequestBody.feature</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3192714160.html">@testfileReader</a>
+</div>
+
+
+  <span class="lead-duration duration">3.270</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Read data from testdata folder json file and send it in body without any changes.</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention">Find the newly appended values in print statement</div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">header Authorization = 'Bearer '+ authToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path 'cdcenvelope'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request requestBody</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">3.259</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>12:41:02.447 request:
+2 &gt; POST https://ingestion-api.edhqa.aws.greenwayhealth.com/cdcenvelope
+2 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IlZVWEJaUHJSMkVFVl8yYWJHMUxhYWpEVkxGcyIsInBpLmF0bSI6ImhzYTIifQ.eyJzY29wZSI6InRlc3Qtc2NvcGUgZ2NzLXNjb3BlIGNkYy1zY29wZSIsImNsaWVudF9pZCI6IjIuMTYuODQwLjEuMTEzODgzLjMuNDQxLjczMDI1IiwiaXNzIjoiaHR0cHM6Ly9hdXRoLWFwaS5naXNxYS5hd3MuZ3JlZW53YXloZWFsdGguY29tL29hdXRoMiIsIm9pZCI6IjIuMTYuODQwLjEuMTEzODgzLjMuNDQxLjczMDI1IiwidGVuYW50IjoiMi4xNi44NDAuMS4xMTM4ODMuMy40NDEuNzMwMjUiLCJleHAiOjE2NjI4MDEwNjJ9.fxLbPaRB2KqxsR70DOzrCDpJuZPXiws5BYa5rvUasaKcinf1vWSLtlGvNnAwEHvdg2KU5diRh5MClZUqrDSVNCUCVcMQKB7hQX1Ctv6ZC3vgR7QTDvvAWIwE0pAsAb3c5f7LJMvEm0zcSdIQ_hlBjJK8kDqDObAc_OKs4Ade-KV8PxoAfLGGvTXcxW7dTJ97BcWpE4ehv0Ew-QRjtYowBc07EiKl6hplYj8mLDT3s1FwLuy4eVkJvOsQVYDpIAJ1iadi2PABHgLVcGwtM0wRD2ad0ljIsuqL_b7FzmL3uBEQwPeK755MbQLPHK2r-aYSENS_qBkE5O9jgcGp7gehqQ
+2 &gt; x-mac-address: cf:32:d4:43:b5,ae:43:ad:12:f4
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 3066
+2 &gt; Host: ingestion-api.edhqa.aws.greenwayhealth.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_231)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;version&quot;:&quot;1.00.00.01&quot;,&quot;environment&quot;:&quot;Toefinger&quot;,&quot;cdcOutboundEnvelope&quot;:{&quot;envelopeDateTime&quot;:&quot;2021-11-05T08:15:30-05:00&quot;,&quot;envelopeSequenceNumber&quot;:&quot;2.16.840.1.113883.3.441.73025-20201105-000001&quot;,&quot;oid&quot;:&quot;2.16.840.1.113883.3.441&quot;,&quot;siteId&quot;:&quot;73025&quot;,&quot;schemaVersion&quot;:&quot;18.31.00&quot;,&quot;timezone&quot;:&quot;-09:00&quot;,&quot;cdcOutboundRows&quot;:[{&quot;tableName&quot;:&quot;Galbart Glover&quot;,&quot;opCode&quot;:&quot;update&quot;,&quot;transactionDateTime&quot;:&quot;2021-11-11T08:15:33-05:00&quot;,&quot;cdcDataObject&quot;:[{&quot;column&quot;:&quot;obxmanualid&quot;,&quot;value&quot;:19},{&quot;column&quot;:&quot;obxmanualguid&quot;,&quot;value&quot;:&quot;59D6922F-4A6E-41B1-82B8-4B0C211B2257&quot;},{&quot;column&quot;:&quot;obxconceptid&quot;,&quot;value&quot;:&quot;1007&quot;},{&quot;column&quot;:&quot;concepthistoryid&quot;,&quot;value&quot;:null},{&quot;column&quot;:&quot;patientid&quot;,&quot;value&quot;:&quot;1005&quot;},{&quot;column&quot;:&quot;testdescription&quot;,&quot;value&quot;:&quot;Respiratory Rate&quot;},{&quot;column&quot;:&quot;resultvaluetype&quot;,&quot;value&quot;:&quot;0&quot;},{&quot;column&quot;:&quot;resultunits&quot;,&quot;value&quot;:&quot;degree celsius&quot;},{&quot;column&quot;:&quot;resultvalue&quot;,&quot;value&quot;:&quot;98.5&quot;},{&quot;column&quot;:&quot;localresultunits&quot;,&quot;value&quot;:&quot;degree celsius&quot;},{&quot;column&quot;:&quot;localresultvalue&quot;,&quot;value&quot;:&quot;98.5&quot;},{&quot;column&quot;:&quot;localresultflag&quot;,&quot;value&quot;:null},{&quot;column&quot;:&quot;localresultuomconceptid&quot;,&quot;value&quot;:&quot;1005&quot;},{&quot;column&quot;:&quot;referencerange&quot;,&quot;value&quot;:null},{&quot;column&quot;:&quot;resultflag&quot;,&quot;value&quot;:null},{&quot;column&quot;:&quot;resultstatus&quot;,&quot;value&quot;:&quot;1&quot;},{&quot;column&quot;:&quot;collectiondate&quot;,&quot;value&quot;:&quot;2005-08-26 08:46:45.000&quot;},{&quot;column&quot;:&quot;resultdate&quot;,&quot;value&quot;:&quot;2005-08-26 08:46:45.000&quot;},{&quot;column&quot;:&quot;createuser&quot;,&quot;value&quot;:&quot;1039&quot;},{&quot;column&quot;:&quot;createdate&quot;,&quot;value&quot;:&quot;2010-10-21 06:06:17.873&quot;},{&quot;column&quot;:&quot;lastchangedby&quot;,&quot;value&quot;:&quot;1039&quot;},{&quot;column&quot;:&quot;lastchangeddate&quot;,&quot;value&quot;:&quot;2010-10-21 06:06:17.873&quot;},{&quot;column&quot;:&quot;resultdocumentid&quot;,&quot;value&quot;:null},{&quot;column&quot;:&quot;documentid&quot;,&quot;value&quot;:null},{&quot;column&quot;:&quot;enabled&quot;,&quot;value&quot;:&quot;1&quot;}]},{&quot;tableName&quot;:&quot;obxmanualclinicalvital&quot;,&quot;opCode&quot;:&quot;update&quot;,&quot;transactionDateTime&quot;:&quot;2021-11-11T08:15:33-05:00&quot;,&quot;cdcDataObject&quot;:[{&quot;column&quot;:&quot;clinicalvitalid&quot;,&quot;value&quot;:&quot;12121212&quot;},{&quot;column&quot;:&quot;obxmanualid&quot;,&quot;value&quot;:&quot;12121212&quot;}]},{&quot;tableName&quot;:&quot;clinicalvital&quot;,&quot;opCode&quot;:&quot;update&quot;,&quot;transactionDateTime&quot;:&quot;2021-11-11T08:15:33-05:00&quot;,&quot;cdcDataObject&quot;:[{&quot;column&quot;:&quot;clinicalvitalid&quot;,&quot;value&quot;:&quot;12121212&quot;},{&quot;column&quot;:&quot;clinicalvitalgroupid&quot;,&quot;value&quot;:&quot;1019&quot;},{&quot;column&quot;:&quot;userid&quot;,&quot;value&quot;:&quot;1039&quot;},{&quot;column&quot;:&quot;datetimetaken&quot;,&quot;value&quot;:&quot;2003-12-17 16:13:31.000&quot;},{&quot;column&quot;:&quot;temperature&quot;,&quot;value&quot;:&quot;null&quot;},{&quot;column&quot;:&quot;height&quot;,&quot;value&quot;:&quot;null&quot;},{&quot;column&quot;:&quot;weight&quot;,&quot;value&quot;:&quot;null&quot;},{&quot;column&quot;:&quot;bpposition&quot;,&quot;value&quot;:&quot;null&quot;},{&quot;column&quot;:&quot;heartrate&quot;,&quot;value&quot;:&quot;null&quot;},{&quot;column&quot;:&quot;systolicbp&quot;,&quot;value&quot;:&quot;10&quot;},{&quot;column&quot;:&quot;diastolicbp&quot;,&quot;value&quot;:&quot;10&quot;},{&quot;column&quot;:&quot;laterality&quot;,&quot;value&quot;:&quot;null&quot;},{&quot;column&quot;:&quot;cuffsize&quot;,&quot;value&quot;:&quot;50&quot;},{&quot;column&quot;:&quot;vitalsite&quot;,&quot;value&quot;:&quot;null&quot;},{&quot;column&quot;:&quot;resprate&quot;,&quot;value&quot;:&quot;null&quot;},{&quot;column&quot;:&quot;hrregularity&quot;,&quot;value&quot;:&quot;null&quot;},{&quot;column&quot;:&quot;tempmethod&quot;,&quot;value&quot;:&quot;Oral&quot;},{&quot;column&quot;:&quot;headcircumference&quot;,&quot;value&quot;:&quot;null&quot;},{&quot;column&quot;:&quot;spo2percent&quot;,&quot;value&quot;:&quot;null&quot;},{&quot;column&quot;:&quot;o2deliverydevice&quot;,&quot;value&quot;:&quot;null&quot;},{&quot;column&quot;:&quot;fio2&quot;,&quot;value&quot;:&quot;null&quot;},{&quot;column&quot;:&quot;flowrate&quot;,&quot;value&quot;:&quot;null&quot;}]},{&quot;tableName&quot;:&quot;careprovider&quot;,&quot;opCode&quot;:&quot;update&quot;,&quot;transactionDateTime&quot;:&quot;2021-11-11T08:15:33-05:00&quot;,&quot;cdcDataObject&quot;:[{&quot;column&quot;:&quot;personid&quot;,&quot;value&quot;:&quot;1005&quot;},{&quot;column&quot;:&quot;careproviderid&quot;,&quot;value&quot;:&quot;1013&quot;},{&quot;column&quot;:&quot;userid&quot;,&quot;value&quot;:&quot;1039&quot;}]}],&quot;summary&quot;:{&quot;totalCount&quot;:4}}}
+
+12:41:05.702 response time in milliseconds: 3255
+2 &lt; 400
+2 &lt; Date: Sat, 10 Sep 2022 07:11:05 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 39
+2 &lt; Connection: keep-alive
+2 &lt; x-amzn-RequestId: 682f4dd4-9fba-4cbc-bb7c-2696fbae8697
+2 &lt; x-amz-apigw-id: YO3FNFHtiYcFkaQ=
+2 &lt; X-Amzn-Trace-Id: Root=1-631c3887-11d026b3731c74140385d16c
+{&quot;message&quot;:&quot;CDC Envelope is processed&quot;}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>12:41:05.705 [print] {
+  &quot;message&quot;: &quot;CDC Envelope is processed&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match response ==</span>
+
+  <span class="lead-duration duration">0.008</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>{&quot;message&quot;:&quot;CDC Envelope is processed&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

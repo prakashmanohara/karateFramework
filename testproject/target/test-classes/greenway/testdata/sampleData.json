@@ -1,0 +1,253 @@
+{
+    "version": "1.00.00.01",
+    "environment": "Dev",
+    "cdcOutboundEnvelope": {
+      "envelopeDateTime": "2021-11-05T08:15:30-05:00",
+      "envelopeSequenceNumber": "2.16.840.1.113883.3.441.73025-20201105-000001",
+      "oid": "2.16.840.1.113883.3.441",
+      "siteId": "73025",
+      "schemaVersion": "18.31.00",
+      "timezone": "-09:00",
+      "cdcOutboundRows": [
+              {
+                  "tableName": "obxmanual",
+                  "opCode": "update",
+                  "transactionDateTime": "2021-11-11T08:15:33-05:00",
+                  "cdcDataObject": [
+                      {
+                          "column": "obxmanualid",
+                          "value": "12121212"
+                      },
+                      {
+                          "column": "obxmanualguid",
+                          "value": "59D6922F-4A6E-41B1-82B8-4B0C211B2257"
+                      },
+                      {
+                          "column": "obxconceptid",
+                          "value": "1007"
+                      },
+                      {
+                          "column": "concepthistoryid",
+                          "value": null
+                      },
+                      {
+                          "column": "patientid",
+                          "value": "1005"
+                      },
+                      {
+                          "column": "testdescription",
+                          "value": "Respiratory Rate"
+                      },
+                      {
+                          "column": "resultvaluetype",
+                          "value": "0"
+                      },
+                      {
+                          "column": "resultunits",
+                          "value": "degree celsius"
+                      },
+                      {
+                          "column": "resultvalue",
+                          "value": "98.5"
+                      },
+                      {
+                          "column": "localresultunits",
+                          "value": "degree celsius"
+                      },
+                      {
+                          "column": "localresultvalue",
+                          "value": "98.5"
+                      },
+                      {
+                          "column": "localresultflag",
+                          "value": null
+                      },
+                      {
+                          "column": "localresultuomconceptid",
+                          "value": "1005"
+                      },
+                      {
+                          "column": "referencerange",
+                          "value": null
+                      },
+                      {
+                          "column": "resultflag",
+                          "value": null
+                      },
+                      {
+                          "column": "resultstatus",
+                          "value": "1"
+                      },
+                      {
+                          "column": "collectiondate",
+                          "value": "2005-08-26 08:46:45.000"
+                      },
+                      {
+                          "column": "resultdate",
+                          "value": "2005-08-26 08:46:45.000"
+                      },
+                      {
+                          "column": "createuser",
+                          "value": "1039"
+                      },
+                      {
+                          "column": "createdate",
+                          "value": "2010-10-21 06:06:17.873"
+                      },
+                      {
+                          "column": "lastchangedby",
+                          "value": "1039"
+                      },
+                      {
+                          "column": "lastchangeddate",
+                          "value": "2010-10-21 06:06:17.873"
+                      },
+                      {
+                          "column": "resultdocumentid",
+                          "value": null
+                      },
+                      {
+                          "column": "documentid",
+                          "value": null
+                      },
+                      {
+                          "column": "enabled",
+                          "value": "1"
+                      }
+                  ]
+              },
+              {
+                  "tableName": "obxmanualclinicalvital",
+                  "opCode": "update",
+                  "transactionDateTime": "2021-11-11T08:15:33-05:00",
+                  "cdcDataObject": [
+                      {
+                          "column": "clinicalvitalid",
+                          "value": "12121212"
+                      },
+                      {
+                          "column": "obxmanualid",
+                          "value": "12121212"
+                      }
+                  ]
+              },
+              {
+                  "tableName": "clinicalvital",
+                  "opCode": "update",
+                  "transactionDateTime": "2021-11-11T08:15:33-05:00",
+                  "cdcDataObject": [
+                      {
+                          "column": "clinicalvitalid",
+                          "value": "12121212"
+                      },
+                      {
+                          "column": "clinicalvitalgroupid",
+                          "value": "1019"
+                      },
+                      {
+                          "column": "userid",
+                          "value": "1039"
+                      },
+                      {
+                          "column": "datetimetaken",
+                          "value": "2003-12-17 16:13:31.000"
+                      },
+                      {
+                          "column": "temperature",
+                          "value": "null"
+                      },
+                      {
+                          "column": "height",
+                          "value": "null"
+                      },
+                      {
+                          "column": "weight",
+                          "value": "null"
+                      },
+                      {
+                          "column": "bpposition",
+                          "value": "null"
+                      },
+                      {
+                          "column": "heartrate",
+                          "value": "null"
+                      },
+                      {
+                          "column": "systolicbp",
+                          "value": "10"
+                      },
+                      {
+                          "column": "diastolicbp",
+                          "value": "10"
+                      },
+                      {
+                          "column": "laterality",
+                          "value": "null"
+                      },
+                      {
+                          "column": "cuffsize",
+                          "value": "50"
+                      },
+                      {
+                          "column": "vitalsite",
+                          "value": "null"
+                      },
+                      {
+                          "column": "resprate",
+                          "value": "null"
+                      },
+                      {
+                          "column": "hrregularity",
+                          "value": "null"
+                      },
+                      {
+                          "column": "tempmethod",
+                          "value": "Oral"
+                      },
+                      {
+                          "column": "headcircumference",
+                          "value": "null"
+                      },
+                      {
+                          "column": "spo2percent",
+                          "value": "null"
+                      },
+                      {
+                          "column": "o2deliverydevice",
+                          "value": "null"
+                      },
+                      {
+                          "column": "fio2",
+                          "value": "null"
+                      },
+                      {
+                          "column": "flowrate",
+                          "value": "null"
+                      }
+                  ]
+              },
+              {
+                  "tableName": "careprovider",
+                  "opCode": "update",
+                  "transactionDateTime": "2021-11-11T08:15:33-05:00",
+                  "cdcDataObject": [
+                      {
+                          "column": "personid",
+                          "value": "1005"
+                      },
+                      {
+                          "column": "careproviderid",
+                          "value": "1013"
+                      },
+                      {
+                          "column": "userid",
+                          "value": "1039"
+                      }
+                  ]
+              }
+          ],
+          "summary": {
+              "totalCount": 4
+          }
+      }
+  }
